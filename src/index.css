@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background: #050d1a;
+    color: #e2e8f0;
+    font-family: 'JetBrains Mono', monospace;
+    min-height: 100dvh;
+  }
+}
+
+@layer utilities {
+  .circle-idle {
+    transform: scale(0.65);
+    opacity: 0.45;
+  }
+  .circle-breathe-in {
+    animation: circleBreathin 4s ease-in forwards;
+  }
+  .circle-breathe-hold {
+    animation: circleHold 7s linear forwards;
+  }
+  .circle-breathe-out {
+    animation: circleBreatheout 8s ease-out forwards;
+  }
+}
+
+@keyframes circleBreathin {
+  from { transform: scale(0.65); opacity: 0.45; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+@keyframes circleHold {
+  0%, 100% { transform: scale(1); opacity: 1; }
+}
+@keyframes circleBreatheout {
+  from { transform: scale(1);    opacity: 1; }
+  to   { transform: scale(0.65); opacity: 0.45; }
+}
+
+@keyframes ripple {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.ripple {
+  animation: ripple 3s ease-out infinite;
+}
+.ripple-delay {
+  animation: ripple 3s ease-out 1s infinite;
+}
