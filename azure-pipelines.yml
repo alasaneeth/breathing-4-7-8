@@ -22,7 +22,7 @@ stages:
     displayName: 'Install & Build'
     steps:
 
-    - task: NodeTool@0
+    - task: UseNode@1
       inputs:
         versionSpec: $(NODE_VERSION)
       displayName: 'Setup Node.js'
