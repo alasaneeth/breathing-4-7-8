@@ -33,7 +33,7 @@ export default function Timeline({ last7, sessionsDoneToday }) {
               {/* Bar */}
               <div
                 className="relative w-full rounded-sm overflow-hidden"
-                style={{ height: 48, background: '#0f172a', border: `1px solid ${border}` }}
+                style={{ height: 40, background: '#0f172a', border: `1px solid ${border}` }}
                 title={`${day.sessions} session${day.sessions !== 1 ? 's' : ''} · ${day.totalMinutes} min`}
               >
                 <div

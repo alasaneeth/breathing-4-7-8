@@ -1,11 +1,16 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
+  html, body, #root {
+    min-height: 100dvh;
+    height: auto;
+  }
   body {
     background: #050d1a;
     color: #e2e8f0;
     font-family: 'JetBrains Mono', monospace;
-    min-height: 100dvh;
   }
 }
 

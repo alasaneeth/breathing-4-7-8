@@ -38,8 +38,8 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-dvh flex flex-col items-center justify-start px-4 py-8 gap-6"
-      style={{ background: 'linear-gradient(160deg, #050d1a 0%, #0a1628 100%)' }}>
+ <div className="w-full flex flex-col items-center px-3 py-5 gap-4"
+  style={{ background: 'linear-gradient(160deg, #050d1a 0%, #0a1628 100%)', minHeight: '100dvh' }}>
 
       {/* Header */}
       <div className="w-full max-w-md flex items-center justify-between">
